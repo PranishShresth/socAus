@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Animation</title>
+
+    <style>
+      .slide {
+        width: 100px;
+        height: 100px;
+        background-color: cornflowerblue;
+        animation-name: leftToRight;
+        animation-duration: 10s;
+        margin: 40px;
+      }
+
+      .fadeIn {
+        width: 100px;
+        height: 100px;
+        background-color: cornflowerblue;
+        animation-name: fadeIn;
+        animation-iteration-count: infinite;
+        animation-duration: 10s;
+      }
+
+      .bgImage {
+        background: url("https://images.unsplash.com/photo-1593642532744-d377ab507dc8?ixid=MnwxMjA3fDF8MHxlZGl0b3JpYWwtZmVlZHwxfHx8ZW58MHx8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=60");
+        background-size: cover;
+        background-position: center center;
+        width: 300px;
+        height: 300px;
+        animation: bgImage 5s;
+      }
+
+      @keyframes bgImage {
+        0% {
+          background-position: 0% 0%;
+        }
+        100% {
+          background-position: 100% 100%;
+        }
+      }
+
+      @keyframes leftToRight {
+        from {
+          transform: translateX(0);
+        }
+        to {
+          transform: translateX(400px);
+        }
+      }
+      @keyframes fadeIn {
+        0% {
+          opacity: 0;
+        }
+        77% {
+          opacity: 0.5;
+        }
+        100% {
+          opacity: 1;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="slide"></div>
+    <div class="fadeIn"></div>
+    <div class="bgImage"></div>
+  </body>
+</html>
