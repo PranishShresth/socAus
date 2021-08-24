@@ -47,3 +47,11 @@ var arrays = [
   ["Hello world"],
 ];
 console.log(arrays);
+
+// Objects
+var object = {
+  key: "value",
+  lucian: "gold",
+  jeremy: 1002,
+};
+console.log(object);
