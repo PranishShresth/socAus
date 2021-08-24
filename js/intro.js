@@ -90,3 +90,41 @@ if (mangos < 10) {
     console.log("condition are met");
   }
 }
+
+if (mangos < 5) {
+  console.log("mangos less than 5");
+} else if (mangos > 5) {
+  console.log("mangos are more than 5");
+} else if (mangos === 5) {
+  console.log("mangos equal to 5");
+} else {
+  console.log("This will execute if both of the conditon are not met");
+}
+
+// Switch statements
+var color = "";
+
+switch (color) {
+  case "blue":
+    console.log("This is code blue");
+    break;
+  case "red":
+    console.log("This is code red");
+    break;
+  default:
+    console.log("if all the cases are not met");
+}
+mangos = 5;
+switch (true) {
+  case mangos < 5:
+    console.log("true");
+    break;
+  case mangos === 5:
+    console.log("5");
+    break;
+  default:
+    console.log("default case");
+}
+
+// 0 = sunday, 1 = monday , 2=tuesday ......6 = saturday
+console.log(new Date().getDay());
