@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Text and typefaces</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Merriweather&display=swap");
+      @font-face {
+        font-family: "Lucian";
+        src: url("./m.ttf");
+      }
+
+      html {
+        font-size: 40px;
+      }
+      body {
+        font-family: "Merriweather", serif;
+      }
+      p {
+        font-size: 20px;
+        font-weight: 900;
+      }
+
+      h2 {
+        font-size: 2rem;
+      }
+
+      .parent {
+        font-size: 24px;
+      }
+
+      .child {
+        font-size: 2em;
+      }
+
+      .text_decoration p {
+        text-decoration: underline;
+        text-transform: uppercase;
+        text-align: right;
+      }
+
+      .indenting {
+        text-indent: 4em;
+      }
+
+      .outdenting {
+        text-indent: -4em;
+        margin-left: 4em;
+      }
+
+      .word_spacing {
+        word-spacing: 0.5em;
+        letter-spacing: 0.2em;
+      }
+
+      .lineHeight {
+        line-height: 1.6;
+      }
+      /* rem ,em ,vw, vh, %*/
+    </style>
+  </head>
+  <body>
+    <p>Hello world</p>
+    <!-- <h1>Relative vs Absolute units</h1> -->
+    <h2>Hi this is rem</h2>
+
+    <div class="parent">
+      <p class="child">Hi there</p>
+    </div>
+
+    <div class="text_decoration">
+      <p>Text decoration</p>
+    </div>
+    <p dir="rtl">Text direction</p>
+
+    <p class="indenting">
+      Indenting text Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+      Dolor necessitatibus nobis nulla aliquam, repellendus eligendi alias ab,
+      molestiae rerum dolore consequuntur blanditiis nostrum sit quasi expedita
+      amet fugit soluta consequatur.
+    </p>
+
+    <p class="outdenting">
+      Outdenting text Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+      Dolor necessitatibus nobis nulla aliquam, repellendus eligendi alias ab,
+      molestiae rerum dolore consequuntur blanditiis nostrum sit quasi expedita
+      amet fugit soluta consequatur.
+    </p>
+    <!-- word spacing vs letter spacing -->
+    <p class="word_spacing">Jeremy and Lucian sat on the wall</p>
+
+    <p class="lineHeight">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos
+      distinctio quis quam perspiciatis recusandae molestiae eos possimus
+      repellat iure repellendus voluptatum cumque reiciendis magni assumenda
+      veniam, deserunt fugiat exercitationem cum?
+    </p>
+  </body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        margin-left: 50px;
+        box-sizing: border-box;
+      }
+      /*descendent selector*/
+      .parent h1 {
+        color: red;
+      }
+      /*child selector*/
+      .parent > h1 {
+        color: blue;
+      }
+
+      /* Sibling selector*/
+      h2 ~ p {
+        color: cadetblue;
+      }
+
+      /* closest/immediate sibling selector*/
+      h2 + p {
+        color: crimson;
+      }
+
+      .pseudo::before {
+        content: "Before ";
+      }
+
+      .pseudo::after {
+        content: " After";
+      }
+
+      .pseudo::first-letter {
+        color: blueviolet;
+      }
+
+      .hover:hover {
+        color: darkgreen;
+        font-size: 24px;
+      }
+
+      input[type="text"] {
+        padding: 100px;
+      }
+      input[type="text"]:focus {
+        background-color: rebeccapurple;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- element selector, id selector, class-->
+    <div class="parent">
+      <h1>Hello world</h1>
+      <h2>Hi</h2>
+      <div>
+        <h1>Hi world</h1>
+      </div>
+    </div>
+
+    <h2>Lucian</h2>
+    <p>Jeremy</p>
+    <p title="Luke">Luke</p>
+
+    <!-- Pseudo tags -->
+    <div class="pseudo">Hello world</div>
+
+    <div class="hover">Please hover over me</div>
+
+    <input type="text" />
+  </body>
+</html>
