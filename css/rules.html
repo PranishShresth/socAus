@@ -23,6 +23,17 @@
       h1 {
         color: cornflowerblue !important;
       }
+
+      .parent .child {
+        color: green;
+      }
+      .child {
+        color: hotpink;
+      }
+
+      .parent1 {
+        color: red;
+      }
     </style>
   </head>
   <body>
@@ -35,6 +46,19 @@
       <h1 class="heading" id="heading" style="color: aquamarine">
         Hello from the other side
       </h1>
+    </div>
+
+    <div class="parent">
+      <div class="child">
+        Hello world
+        <div class="child2">
+          <div class="child3">Hello</div>
+        </div>
+      </div>
+    </div>
+    <div class="child">Hey</div>
+    <div class="parent1">
+      <div>Inheritance principle</div>
     </div>
   </body>
 </html>
