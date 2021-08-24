@@ -55,3 +55,38 @@ var object = {
   jeremy: 1002,
 };
 console.log(object);
+
+var x = "S";
+var y = "👾";
+// var function = "sds"
+console.log(x.length);
+console.log(y.length);
+
+// Conditionals
+// if else
+var mails = 2;
+if (mails > 3) {
+  console.log("Mails more than 3 has been received");
+} else {
+  console.log("Less than 3");
+}
+
+var mangos = 5;
+var apples = 3;
+// && ||
+
+if (mangos < 6 && apples > 5) {
+  console.log("If condition are met?");
+}
+
+if (mangos < 6 || apples > 5) {
+  console.log("If condition are met using OR ?");
+}
+if (mangos < 10 && apples > 2) {
+  console.log("Both of the condition are met. ");
+}
+if (mangos < 10) {
+  if (apples > 2) {
+    console.log("condition are met");
+  }
+}
