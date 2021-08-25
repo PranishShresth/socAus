@@ -25,3 +25,19 @@ console.log(sumUntil(20));
 console.log(sumUntil(100));
 console.log(sumUntil(1000));
 console.log(sumUntil(500));
+
+let fn = function () {
+  console.log("Hello world");
+};
+
+fn();
+
+let fn1 = (function fn2() {
+  console.log("hellow");
+})(
+  // IIFE (Imediately invoked function expression)
+
+  function () {
+    console.log("hi from IIFE");
+  }
+)();
