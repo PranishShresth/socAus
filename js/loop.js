@@ -26,6 +26,11 @@ while (true) {
   console.log(i);
   i++;
 }
+
+// if number is multiple of 3, print fizz
+// if number is multiple of 5 print buzz
+// if it is both ,print fizzbuzz
+
 // console.log("hello world");
 // console.log("hello world");
 // console.log("hello world");
