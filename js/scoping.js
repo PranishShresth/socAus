@@ -15,3 +15,14 @@ console.log(jeremy);
   number = 21;
   console.log(number);
 }
+
+// var is function scoped;
+// let is block scoped, we cannot re declare it
+
+function def() {
+  let number = 20;
+}
+
+{
+  const TAX_RATE = 10.2;
+}
