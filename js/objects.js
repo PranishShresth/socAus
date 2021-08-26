@@ -58,3 +58,10 @@ for (let properties of Object.entries(person)) {
   const value = properties[1];
   console.log(key, value);
 }
+console.log("-------------------------");
+let obj = { a: 1 };
+console.log("b" in obj);
+console.log(typeof obj);
+let array = [1, 23, 2, 4];
+console.log(typeof array);
+console.log(4 in array);
