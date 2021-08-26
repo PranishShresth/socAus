@@ -42,7 +42,7 @@ for (let car of cars) {
 const array1 = [132, 232, 54, 34, 232];
 // 132 + 232 + 54+ 34+232
 const sumArray = function (numbers) {
-  sum = 0;
+  let sum = 0;
   for (let num of numbers) {
     sum += num;
   }
@@ -61,10 +61,27 @@ const twodimensionalArray = [
 console.log(twodimensionalArray[0][0]);
 console.log(twodimensionalArray[0][1]);
 // Write an algorithm to find of sum of all even number in 2D array
-
+let sum = 0;
 for (let i = 0; i < twodimensionalArray.length; i++) {
   for (let j = 0; j < twodimensionalArray[i].length; j++) {
-    console.log(twodimensionalArray[i][j]);
+    if (twodimensionalArray[i][j] % 2 === 0) {
+      sum += twodimensionalArray[i][j];
+    }
   }
-  //   console.log(twodimensionalArray[i]);
 }
+console.log(sum);
+
+// Create a function which return number of true value in an array
+// countTrue([true,false,true,true,true]) - > 4
+// countTrue([true,true,true,false,false]) -> 3
+
+function countTrue(array) {
+  let count = 0;
+  for (let element of array) {
+    if (element) {
+      count++;
+    }
+  }
+  return count;
+}
+console.log(countTrue([true, false, true, true, true]));
