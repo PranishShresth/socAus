@@ -94,3 +94,22 @@ main {
   text-transform: uppercase;
   font-size: 0.84rem;
 }
+
+/* footer */
+
+footer {
+  background-color: black;
+  color: white;
+  padding: 3rem 0;
+}
+
+footer a {
+  color: white;
+}
+
+.footerColumn {
+  padding: 1rem 0;
+}
+.footerColumn > p {
+  padding-bottom: 5px;
+}
