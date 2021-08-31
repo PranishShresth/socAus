@@ -44,7 +44,7 @@ header {
   justify-content: space-between;
   padding: 15px 0;
   text-transform: uppercase;
-  border: 1px solid var(--secondaryColor);
+  border-bottom: 1px solid var(--secondaryColor);
 }
 
 .navigation {
