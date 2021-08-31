@@ -73,4 +73,5 @@ main {
 .heroRight .hero_author {
   color: var(--textSecondary);
   text-transform: uppercase;
+  font-size: 0.84rem;
 }
