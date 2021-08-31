@@ -4,6 +4,20 @@
   margin: 0;
   box-sizing: border-box;
 }
+
+/* globals */
 body {
   font-family: "Roboto", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+ul {
+  list-style: none;
+}
+header {
+  display: flex;
+  justify-content: space-between;
 }
