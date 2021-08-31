@@ -6,27 +6,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Flex</title>
     <style>
+      * {
+        box-sizing: border-box;
+      }
       .container {
         display: flex;
         flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
+        gap: 10px;
         height: 100vh;
       }
+
+      /*
+      .grow1 {
+        flex-grow: 1;
+      }
+      .grow2 {
+        flex-grow: 2;
+      }
+      .grow3 {
+        flex-grow: 3;
+      }
+      */
       .child {
-        width: 200px;
         height: 200px;
-        margin: 20px;
+        flex-grow: 1;
+        flex-basis: 50%;
+        max-width: 50%;
         background-color: salmon;
       }
     </style>
   </head>
   <body>
     <div class="container">
+      <div class="child grow1 shrink"></div>
+      <div class="child grow2"></div>
       <div class="child"></div>
       <div class="child"></div>
-      <div class="child"></div>
-      <div class="child"></div>
+
+      <!-- <div class="child grow3"></div>
+      <div class="child"></div> -->
     </div>
   </body>
 </html>
