@@ -1,4 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+:root {
+  --secondaryColor: #e6e6e6;
+  --textSecondary: #666;
+}
 * {
   padding: 0;
   margin: 0;
@@ -8,6 +13,10 @@
 /* globals */
 body {
   font-family: "Roboto", sans-serif;
+}
+
+img {
+  width: 100%;
 }
 
 a {
@@ -29,9 +38,12 @@ ul {
 
 header {
   display: flex;
+  position: fixed;
+  width: 90%;
   justify-content: space-between;
   padding: 15px 0;
   text-transform: uppercase;
+  border: 1px solid var(--secondaryColor);
 }
 
 .navigation {
