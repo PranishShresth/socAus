@@ -112,4 +112,16 @@ footer a {
 }
 .footerColumn > p {
   padding-bottom: 5px;
+  font-size: 1.1rem;
+}
+
+.subscribe_input {
+  width: 100%;
+  padding: 10px;
+  outline: none;
+}
+.subscribe_btn {
+  padding: 10px;
+  margin: 8px 0;
+  border: 0;
 }
