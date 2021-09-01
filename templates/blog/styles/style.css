@@ -141,3 +141,18 @@ footer a {
     padding: 16px 5px;
   }
 }
+@media screen and (min-width: 992px) {
+  .heroContainer {
+    display: flex;
+  }
+  .heroContainer > div {
+    flex: 0 0 50%;
+  }
+  .heroContainer .heroRight {
+    padding: 0 12px;
+  }
+  .blogContainer > .blog {
+    flex: 0 0 33.3333%;
+    padding: 16px 5px;
+  }
+}
