@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        display: grid;
+        gap: 10px;
+        grid-template-areas: "h h h h1 h1" "m m a a a" "m m a1 a1 a1" "f1 f f f2 f2";
+        grid-template-columns: repeat(5, 200px);
+        grid-template-rows: 60px 200px 200px 80px;
+      }
+
+      header {
+        grid-area: h;
+        background: orange;
+      }
+      .h1 {
+        grid-area: h1;
+        background-color: red;
+      }
+      .a1 {
+        grid-area: a1;
+        background: crimson;
+      }
+      .f1 {
+        grid-area: f1;
+        background-color: lightgreen;
+      }
+      .f2 {
+        grid-area: f2;
+        background-color: lightgreen;
+      }
+      main {
+        grid-area: m;
+        background: lightcyan;
+      }
+      aside {
+        grid-area: a;
+        background: crimson;
+      }
+      footer {
+        grid-area: f;
+        background: lightgreen;
+      }
+    </style>
+  </head>
+  <body>
+    <header></header>
+    <div class="h1"></div>
+    <main></main>
+    <div class="a1"></div>
+    <aside></aside>
+    <div class="f1"></div>
+    <div class="f2"></div>
+    <footer></footer>
+  </body>
+</html>
