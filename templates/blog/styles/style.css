@@ -125,3 +125,19 @@ footer a {
   margin: 8px 0;
   border: 0;
 }
+
+@media screen and (min-width: 768px) {
+  .blogContainer,
+  .footerContainer {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .footerContainer {
+    gap: 30px;
+  }
+  .blogContainer > .blog {
+    flex: 0 0 50%;
+    padding: 16px 5px;
+  }
+}
