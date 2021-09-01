@@ -1,0 +1,23 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+img {
+  width: 100%;
+}
+.imageContainer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.imageColumn {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.wrapper {
+  width: 90%;
+  margin: 0 auto;
+}
