@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        display: grid;
+        grid-template-areas: "h h h h" "m m . a" "f f f f";
+        grid-template-columns: repeat(4, 200px);
+        grid-template-rows: 60px 400px 80px;
+      }
+
+      header {
+        grid-area: h;
+        background: orange;
+      }
+      main {
+        grid-area: m;
+        background: lightcyan;
+      }
+      aside {
+        grid-area: a;
+        background: crimson;
+      }
+      footer {
+        grid-area: f;
+        background: lightgreen;
+      }
+    </style>
+  </head>
+  <body>
+    <header></header>
+    <main></main>
+    <aside></aside>
+    <footer></footer>
+  </body>
+</html>
