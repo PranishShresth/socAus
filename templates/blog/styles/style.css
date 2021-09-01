@@ -127,6 +127,10 @@ footer a {
 }
 
 /* contact page */
+
+.contactContainer {
+  padding: 4rem 0;
+}
 .form_input {
   width: 100%;
   outline: 0;
@@ -139,17 +143,28 @@ footer a {
 .textArea {
   resize: none;
 }
+.form_btn {
+  background-color: black;
+  color: white;
+  border: 0;
+  padding: 10px 60px;
+  cursor: pointer;
+}
 @media screen and (min-width: 768px) {
   .blogContainer,
-  .footerContainer {
+  .footerContainer,
+  .contactContainer {
     display: flex;
     flex-wrap: wrap;
   }
-
+  .contactContainer {
+    padding: 6rem 0;
+  }
   .footerContainer {
     gap: 30px;
   }
-  .blogContainer > .blog {
+  .blogContainer > .blog,
+  .contactContainer > div {
     flex: 0 0 50%;
     padding: 16px 5px;
   }
@@ -157,7 +172,7 @@ footer a {
 @media screen and (min-width: 992px) {
   .wrapper,
   header {
-    width: 70%;
+    width: 80%;
   }
   .heroContainer {
     display: flex;
