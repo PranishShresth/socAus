@@ -9,12 +9,15 @@
       .container {
         display: grid;
         gap: 10px;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 300px);
+        align-items: cne;
       }
       .child {
-        width: 100%;
+        width: 100px;
         height: 100px;
         margin: 10px;
+        justify-self: center;
         background-color: darkkhaki;
       }
     </style>
