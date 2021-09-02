@@ -58,13 +58,16 @@ window.addEventListener("DOMContentLoaded", function () {
     "banana",
     "cherry",
   ];
+
+  const colors = ["blue", "red", "purple", "gold", "yellow", "turquoise"];
+
   fruits
     .sort()
     // .filter((f) => f.startsWith("p"))
     .forEach((fruit) => {
       let div = document.createElement("div");
       div.innerHTML = fruit;
-      div.style.backgroundColor = "cyan";
+      div.style.backgroundColor = colors[Math.floor(Math.random() * 6)];
       div.style.margin = "20px";
       div.style.padding = "30px";
       body.appendChild(div);
