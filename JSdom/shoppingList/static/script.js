@@ -1,5 +1,6 @@
 let form = document.querySelector("form");
 let shoppingList = document.querySelector(".shoppingList");
+
 form.addEventListener("submit", function (ev) {
   // prevents page from reloading
   ev.preventDefault();
@@ -15,7 +16,18 @@ form.addEventListener("submit", function (ev) {
   //   adding a class
   div.classList.add("shopping_item");
 
-  let item = `<p>${shoppingItem}</p><p class="deleteBtn">Delete</p>`;
+  let item = `<p>${shoppingItem}</p>`;
+
+  //   delete Btn
+  let deleleBtn = document.createElement("button");
+  deleleBtn.classList.add("deleteBtn");
+  deleleBtn.innerText = "Delete";
+  deleleBtn.addEventListener("click", function (ev) {
+    ev.target.parentNode.remove();
+  });
+
   div.innerHTML = item;
+
+  div.appendChild(deleleBtn);
   shoppingList.appendChild(div);
 });

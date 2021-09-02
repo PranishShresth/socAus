@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
 * {
   padding: 0;
   margin: 0;
@@ -5,6 +7,7 @@
 }
 
 body {
+  font-family: "Poppins", sans-serif;
   background-color: #f7f7f7;
 }
 
@@ -37,8 +40,18 @@ body {
   margin: 5px 20px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   padding: 10px;
   border: 1px solid #e6e6e6;
+}
+.deleteBtn {
+  border: 0;
+  outline: none;
+  background: #d72503;
+  color: white;
+  font-weight: 600;
+  padding: 8px;
+  cursor: pointer;
 }
 form {
   display: flex;
@@ -48,9 +61,14 @@ form {
 .form_input {
   background: #f7f7f7;
   border: 0;
+  font-family: "Poppins", sans-serif;
   outline: none;
   padding: 10px;
+  font-size: 16px;
   flex: 1;
+}
+button {
+  font-family: "Poppins", sans-serif;
 }
 .form_button {
   border: 0;
