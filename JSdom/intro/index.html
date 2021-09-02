@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Heading</h1>
+    <h1 id="heading">Heading2</h1>
+    <!-- DOM is an API -->
+    <!-- All html element is considered as node but not all nodes are html elements -->
+    <script>
+      let h1 = document.getElementsByTagName("h1");
+      let heading = document.getElementById("heading");
+      console.log(h1[0].innerText);
+      let x = 12;
+      console.log(x);
+      console.log(heading.innerText);
+      // getElementById
+      // getElementByTagName
+      //getElementByClassName
+      //querySelector()
+    </script>
+  </body>
+</html>
