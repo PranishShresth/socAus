@@ -1,5 +1,9 @@
-let button = document.querySelector("button");
+let form = document.querySelector("form");
 
-button.addEventListener("click", function () {
-  console.log("helo");
+form.addEventListener("submit", function (ev) {
+  // prevents page from reloading
+  ev.preventDefault();
+  const shoppingItem = ev.target[0].value;
+  console.log(ev);
+  console.log(shoppingItem);
 });
