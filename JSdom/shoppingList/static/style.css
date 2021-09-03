@@ -82,6 +82,17 @@ form {
   font-size: 16px;
   flex: 1;
 }
+
+.editInput {
+  background: #f7f7f7;
+  border: 0;
+  font-family: "Poppins", sans-serif;
+  outline: none;
+  padding: 7px;
+  font-size: 16px;
+  flex: 1;
+  width: 100%;
+}
 button {
   font-family: "Poppins", sans-serif;
 }
@@ -93,4 +104,12 @@ button {
   font-weight: 600;
   padding: 10px;
   cursor: pointer;
+}
+
+.hide {
+  display: none;
+}
+
+.show {
+  display: block;
 }

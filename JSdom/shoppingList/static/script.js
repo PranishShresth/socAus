@@ -25,9 +25,25 @@ function addShoppingItem(item) {
   let p = document.createElement("p");
   p.innerText = item;
 
+  let input = document.createElement("input");
+  input.classList.add("editInput", "hide");
+  input.value = item;
+
   let editBtn = document.createElement("button");
   editBtn.innerText = "Edit";
   editBtn.classList.add("editBtn");
+  editBtn.addEventListener("click", function () {
+    input.classList.toggle("show");
+    p.classList.toggle("hide");
+  });
+
+  input.addEventListener("keydown", function (ev) {
+    if (ev.key === "Enter") {
+      p.innerText = ev.target.value;
+      input.classList.toggle("show");
+      p.classList.toggle("hide");
+    }
+  });
   //   delete Btn
   let deleleBtn = document.createElement("button");
   deleleBtn.classList.add("deleteBtn");
@@ -37,6 +53,7 @@ function addShoppingItem(item) {
   });
 
   div.appendChild(p);
+  div.appendChild(input);
   div.appendChild(editBtn);
   div.appendChild(deleleBtn);
   shoppingList.appendChild(div);
