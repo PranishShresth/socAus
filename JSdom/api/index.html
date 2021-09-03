@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .egg {
+        width: 100px;
+        height: 150px;
+        border-radius: 50%;
+        background-color: burlywood;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Set timeout and set interval</h1>
+
+    <div class="egg"></div>
+    <script>
+      let timer = setInterval(() => {
+        increaseEggSize();
+        console.log("here");
+      }, 1000);
+      function increaseEggSize() {
+        let egg = document.querySelector(".egg");
+        let styles = getComputedStyle(egg);
+
+        let computedWidth = styles.width.split("px")[0];
+        let computedHeight = styles.height.split("px")[0];
+        if (computedHeight > 1002) {
+          clearInterval(timer);
+          return;
+        }
+        egg.style.width = `${+computedWidth + 100}px`;
+        egg.style.height = `${+computedHeight + 150}px`;
+      }
+    </script>
+  </body>
+</html>
