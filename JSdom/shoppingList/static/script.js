@@ -11,13 +11,23 @@ form.addEventListener("submit", function (ev) {
     return alert("The shopping item shouldn't be empty");
   }
 
+  addShoppingItem(shoppingItem);
+  //   making it empty value
+  ev.target[0].value = "";
+});
+
+function addShoppingItem(item) {
   //   creating a div element
   let div = document.createElement("div");
   //   adding a class
   div.classList.add("shopping_item");
 
-  let item = `<p>${shoppingItem}</p>`;
+  let p = document.createElement("p");
+  p.innerText = item;
 
+  let editBtn = document.createElement("button");
+  editBtn.innerText = "Edit";
+  editBtn.classList.add("editBtn");
   //   delete Btn
   let deleleBtn = document.createElement("button");
   deleleBtn.classList.add("deleteBtn");
@@ -26,8 +36,8 @@ form.addEventListener("submit", function (ev) {
     ev.target.parentNode.remove();
   });
 
-  div.innerHTML = item;
-
+  div.appendChild(p);
+  div.appendChild(editBtn);
   div.appendChild(deleleBtn);
   shoppingList.appendChild(div);
-});
+}

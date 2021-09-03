@@ -39,10 +39,25 @@ body {
 .shopping_item {
   margin: 5px 20px;
   display: flex;
-  justify-content: space-between;
+
   align-items: center;
   padding: 10px;
   border: 1px solid #e6e6e6;
+}
+
+.shopping_item p {
+  flex: 1;
+}
+
+.editBtn {
+  border: 0;
+  outline: none;
+  background: #09aeae;
+  margin: 0 10px;
+  color: white;
+  font-weight: 600;
+  padding: 8px;
+  cursor: pointer;
 }
 .deleteBtn {
   border: 0;
