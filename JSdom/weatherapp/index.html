@@ -15,7 +15,18 @@
     <script src="./statics/script.js" defer></script>
   </head>
   <body>
-    <div class="weatherCard">
+    <div class="formContainer">
+      <form>
+        <div class="input">
+          <input type="text" placeholder="Enter a city" class="weather_input" />
+        </div>
+        <div>
+          <button type="submit" class="weather_btn">Get Weather</button>
+        </div>
+      </form>
+    </div>
+    <main id="weatherContainer"></main>
+    <!-- <div class="weatherCard">
       <div class="city_name">Sydney</div>
       <div class="temperature">20c</div>
       <div class="description">Clear Sky</div>
@@ -33,6 +44,6 @@
           <div class="weather_info_data">23</div>
         </div>
       </div>
-    </div>
+    </div> -->
   </body>
 </html>

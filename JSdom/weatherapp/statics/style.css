@@ -38,7 +38,10 @@ body {
   box-shadow: 7px 8px 13px rgba(0, 0, 0, 0.2);
   text-align: center;
 }
-
+.weatherCard .city_name {
+  color: #9c27b0;
+  font-size: 1.8rem;
+}
 .weatherCard .temperature {
   font-size: 2.5rem;
   color: #acacac;
